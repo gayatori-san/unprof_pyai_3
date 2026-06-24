@@ -26,15 +26,18 @@ Follow these instructions to run the application directly from your Ubuntu termi
    ```bash
    python3 "task 3.py"
    ```
-📁 File Structure
+📁 File Structure:
+
 task 3.py - The main Python script containing the application logic.
 
 data.json - Auto-generated storage file for your contact data.
 
 app.log - Auto-generated log file tracking application events and errors.
 
-Concept,Implementation
-try / except,Catching FileNotFoundError or JSONDecodeError to prevent the app from crashing on startup.
-else / finally,Executing code only when file loading succeeds (else) and confirming startup completion (finally).
-Custom Exceptions,Defining and raising a specific EmptyNameError to block blank name inputs.
-Logging,"Utilizing Python's logging module to track INFO, WARNING, and ERROR events in the background."
+| Concept           | Implementation                                                                                        |
+| ----------------- | ----------------------------------------------------------------------------------------------------- |
+| `try / except`    | Catching `FileNotFoundError` or `JSONDecodeError` to prevent the app from crashing on startup         |
+| `else / finally`  | Executing code only when file loading succeeds (`else`) and confirming startup completion (`finally`) |
+| Custom Exceptions | Defining and raising a specific `EmptyNameError` to block blank name inputs                           |
+| Logging           | Utilizing Python's `logging` module to track `INFO`, `WARNING`, and `ERROR` events in the background  |
+
